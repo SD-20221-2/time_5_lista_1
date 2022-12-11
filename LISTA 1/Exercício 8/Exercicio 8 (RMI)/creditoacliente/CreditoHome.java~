@@ -1,0 +1,13 @@
+/*
+ * ClienteHome.java
+ * Versão 1.1.1
+ * Data 30/08/2004
+ */
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface ClienteHome extends Remote {
+    double calculaCredito() throws RemoteException;
+    void setCliente(double saldo) throws RemoteException;
+}
